@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+@import Hello;
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end
 
@@ -19,6 +21,11 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)buttonClick:(id)sender {
+    NSLog(@"text == %@",HelloGreetings(@"World!(go)"));
+    _label.text = HelloGreetings(@"World!(go)");
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

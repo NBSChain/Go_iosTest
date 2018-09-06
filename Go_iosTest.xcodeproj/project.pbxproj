@@ -15,6 +15,7 @@
 		155522AC2140FED3009BFBBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 155522AB2140FED3009BFBBF /* main.m */; };
 		155522B62140FED3009BFBBF /* Go_iosTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 155522B52140FED3009BFBBF /* Go_iosTestTests.m */; };
 		155522C12140FED3009BFBBF /* Go_iosTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 155522C02140FED3009BFBBF /* Go_iosTestUITests.m */; };
+		155522CF2140FF4D009BFBBF /* Hello.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 155522CE2140FF4D009BFBBF /* Hello.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		155522BC2140FED3009BFBBF /* Go_iosTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Go_iosTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		155522C02140FED3009BFBBF /* Go_iosTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Go_iosTestUITests.m; sourceTree = "<group>"; };
 		155522C22140FED4009BFBBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		155522CE2140FF4D009BFBBF /* Hello.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Hello.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				155522CF2140FF4D009BFBBF /* Hello.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +104,7 @@
 		1555229B2140FED2009BFBBF /* Go_iosTest */ = {
 			isa = PBXGroup;
 			children = (
+				155522CE2140FF4D009BFBBF /* Hello.framework */,
 				1555229C2140FED2009BFBBF /* AppDelegate.h */,
 				1555229D2140FED2009BFBBF /* AppDelegate.m */,
 				1555229F2140FED2009BFBBF /* ViewController.h */,
@@ -434,6 +438,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Go_iosTest",
+				);
 				INFOPLIST_FILE = Go_iosTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +458,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Go_iosTest",
+				);
 				INFOPLIST_FILE = Go_iosTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
