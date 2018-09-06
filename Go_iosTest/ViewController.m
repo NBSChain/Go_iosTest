@@ -10,6 +10,7 @@
 @import Hello;
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end
@@ -22,8 +23,9 @@
 }
 
 - (IBAction)buttonClick:(id)sender {
-    NSLog(@"text == %@",HelloGreetings(@"World!(go)"));
-    _label.text = HelloGreetings(@"World!(go)");
+    if (![_textField.text isEqualToString:@""]) {
+        _label.text = HelloGreetings(_textField.text);
+    }
     
 }
 
